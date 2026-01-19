@@ -68,7 +68,11 @@ public class Vehiculo {
                 "Nombre modelo: " + this.modelo +
                 "Nombre disponible: " ;
         if(this.disponible){
+            return+="si";
             
+        
+        }else{
+            return+="no";
         
         }
                 
