@@ -10,5 +10,21 @@ package ejercicio1;
  * @author EAG
  */
 public class Empresa {
+// Declaración de atributos
+    private String matricula ;
+    private String marca ;
+    private String modelo ;
+    private boolean disponible ;
     
+    
+// Constructor por defecto
+
+    
+// Constructor por parámetros
+// Constructor de copia
+// Declaración de getters (1 por atributo)
+// Declaración de setters (1 por atributo)
+// Declaración de métodos personalizados
+// Declaración toString() (con @Override)
+   
 }
