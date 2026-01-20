@@ -11,20 +11,33 @@ package ejercicio1;
  */
 public class Empresa {
 // Declaración de atributos
-    private String matricula ;
-    private String marca ;
-    private String modelo ;
-    private boolean disponible ;
-    
-    
+    private Vehiculo[] VehiculosRegistrados;
+// Constructores
 // Constructor por defecto
+    public Empresa(){
+        this.VehiculosRegistrados = new Vehiculo[0];
 
+    }
+    // Constructor por parámetros
+    public Empresa(Vehiculo[] VehiculosRegistrados){
+        this.VehiculosRegistrados = VehiculosRegistrados;
+    }
+    // Constructor de copia
+    public Empresa(Empresa VehiculosReg ){
+        this.VehiculosRegistrados = VehiculosReg.VehiculosRegistrados;
+    }
+    // Declaración de getters (1 por atributo)
+    public  Vehiculo[] getVehiculosRegistrados(){
+        return this.VehiculosRegistrados;
+    }
     
-// Constructor por parámetros
-// Constructor de copia
-// Declaración de getters (1 por atributo)
-// Declaración de setters (1 por atributo)
-// Declaración de métodos personalizados
-// Declaración toString() (con @Override)
+    // Declaración de setters (1 por atributo)
+    public void setVehiculosRegistrados(Vehiculo[] VehiculosRegistrados){
+        this.VehiculosRegistrados = VehiculosRegistrados;
+    }
+    // Declaración de métodos personalizados
+    
+    
+    // Declaración toString() (con @Override)
    
 }

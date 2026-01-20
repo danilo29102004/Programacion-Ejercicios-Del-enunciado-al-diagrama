@@ -7,7 +7,7 @@ package ejercicio1;
 
 /**
  *
- * @author EAG
+ * @author EAG 
  */
 public class Vehiculo {
     private String matricula ;
@@ -63,21 +63,23 @@ public class Vehiculo {
     } 
     @Override
     public String toString(){
-        return "Nombre matricula: " + this.matricula +
+        String cadena = "Nombre matricula: " + this.matricula +
                 "Nombre marca: " + this.marca +
                 "Nombre modelo: " + this.modelo +
                 "Nombre disponible: " ;
         if(this.disponible){
-            return+="si";
+            cadena+="si";
             
         
         }else{
-            return+="no";
+            cadena+="no";
         
         }
+        
                 
                
-          
+      return cadena;    
     }
+    
     
 }
