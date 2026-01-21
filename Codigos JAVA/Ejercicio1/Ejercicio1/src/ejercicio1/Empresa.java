@@ -11,29 +11,29 @@ package ejercicio1;
  */
 public class Empresa {
 // Declaración de atributos
-    private Vehiculo[] VehiculosRegistrados;
+    private Vehiculo[] vehiculosRegistrados;
 // Constructores
 // Constructor por defecto
     public Empresa(){
-        this.VehiculosRegistrados = new Vehiculo[0];
+        this.vehiculosRegistrados = new Vehiculo[0];
 
     }
     // Constructor por parámetros
-    public Empresa(Vehiculo[] VehiculosRegistrados){
-        this.VehiculosRegistrados = VehiculosRegistrados;
+    public Empresa(Vehiculo[] vehiculosRegistrados){
+        this.vehiculosRegistrados = vehiculosRegistrados;
     }
     // Constructor de copia
     public Empresa(Empresa VehiculosReg ){
-        this.VehiculosRegistrados = VehiculosReg.VehiculosRegistrados;
+        this.vehiculosRegistrados = VehiculosReg.vehiculosRegistrados;
     }
     // Declaración de getters (1 por atributo)
     public  Vehiculo[] getVehiculosRegistrados(){
-        return this.VehiculosRegistrados;
+        return this.vehiculosRegistrados;
     }
     
     // Declaración de setters (1 por atributo)
     public void setVehiculosRegistrados(Vehiculo[] VehiculosRegistrados){
-        this.VehiculosRegistrados = VehiculosRegistrados;
+        this.vehiculosRegistrados = VehiculosRegistrados;
     }
     // Declaración de métodos personalizados
     

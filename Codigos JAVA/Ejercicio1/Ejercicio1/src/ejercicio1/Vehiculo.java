@@ -69,15 +69,11 @@ public class Vehiculo {
                 "Nombre disponible: " ;
         if(this.disponible){
             cadena+="si";
-            
-        
+                
         }else{
             cadena+="no";
-        
-        }
-        
-                
-               
+   
+        }       
       return cadena;    
     }
     
