@@ -64,9 +64,9 @@ public class Vehiculo {
     @Override
     public String toString(){
         String cadena = "Nombre matricula: " + this.matricula +
-                "Nombre marca: " + this.marca +
-                "Nombre modelo: " + this.modelo +
-                "Nombre disponible: " ;
+                " Nombre marca: " + this.marca +
+                " Nombre modelo: " + this.modelo +
+                "  disponible: " ;
         if(this.disponible){
             cadena+="si";
                 
