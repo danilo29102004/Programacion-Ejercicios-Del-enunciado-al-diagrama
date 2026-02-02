@@ -5,27 +5,26 @@
  */
 package ejercicio8;
 
-/**
- *
- * @author EAG
- */
 public class Jugador {
     private String nombre;
-    private int nivelInicial;
+    private int nivel;
+    private Partidas[] partidas;
     
     public Jugador(){
         this.nombre = "";
-        this.nivelInicial = 0; 
+        this.nivel = 1; 
+        this.partidas = new Partidas[0];
     }
     
-    public Jugador(String nombre, int nivelInicial ){
+    public Jugador(String nombre, int nivelInicial, Partidas[] partidas ){
         this.nombre = nombre;
-        this.nivelInicial = nivelInicial; 
+        this.nivel = nivelInicial; 
+        this.partidas = new Partidas[0];
     }
     
     public Jugador(Jugador jugadorCopia){
         this.nombre = jugadorCopia.nombre;
-        this.nivelInicial = jugadorCopia.nivelInicial;
+        this.nivel = jugadorCopia.nivel;
 
     }
 
@@ -33,21 +32,33 @@ public class Jugador {
         return this.nombre;
     }
 
-    public int getNivelInicial() {
-        return this.nivelInicial;
+    public int getNivel() {
+        return this.nivel;
+    }
+
+    public Partidas[] getPartidas() {
+        return partidas;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setNivelInicial(int nivelInicial) {
-        this.nivelInicial = nivelInicial;
+    public void setNivel(int nivelInicial) {
+        this.nivel = nivelInicial;
     }
-    public  subidaNivel(Nivel nivel){
+
+    public void setPartidas(Partidas[] partidas) {
+        this.partidas = partidas;
+    }
     
-    
-    
+    public void subidaDeNivel ( ){
+            this.nivel += 1;
+
+                
+        
+        
+        
     }
     
     
