@@ -54,12 +54,14 @@ public class Jugador {
     
     public void subidaDeNivel ( ){
             this.nivel += 1;
-
-                
-        
-        
-        
+   
     }
+
+    @Override
+    public String toString() {
+        return "Jugador{" + "nombre=" + nombre + ", nivel=" + nivel + ", partidas=" + partidas + '}';
+    }
+    
     
     
     

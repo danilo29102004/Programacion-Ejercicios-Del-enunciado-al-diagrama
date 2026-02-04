@@ -47,6 +47,11 @@ public class Habitacion {
     public void setHabitacionDisponible(boolean habitacionDisponible) {
         this.habitacionDisponible = habitacionDisponible;
     }
+
+    @Override
+    public String toString() {
+        return "Habitacion{" + "numero=" + numero + ", tipoHabitacion=" + tipoHabitacion + ", habitacionDisponible=" + habitacionDisponible + '}';
+    }
     
     
     

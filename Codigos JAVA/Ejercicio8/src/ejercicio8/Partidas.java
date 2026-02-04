@@ -53,6 +53,11 @@ public class Partidas {
         this.jugador.subidaDeNivel();
 
     } 
+
+    @Override
+    public String toString() {
+        return "Partidas{" + "duracion=" + duracion + ", jugador=" + jugador + ", partidaActiva=" + partidaActiva + '}';
+    }
     
 
     
